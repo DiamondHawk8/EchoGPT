@@ -4,7 +4,6 @@ import os
 from rich import print
 
 def num_tokens_from_messages(messages, model='gpt-3.5-turbo'):
-  """Copied with minor changes from: https://platform.openai.com/docs/guides/chat/managing-tokens """
   try:
       encoding = tiktoken.encoding_for_model(model)
       num_tokens = 0
