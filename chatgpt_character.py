@@ -51,7 +51,7 @@ while True:
     # Send question to OpenAi
     openai_result = openai_manager.chat_with_history(mic_result)
     
-    # Write the results to txt file as a backup
+    # Write the results to txt file as a backupp
     with open(BACKUP_FILE, "w") as file:
         file.write(str(openai_manager.chat_history))
 
